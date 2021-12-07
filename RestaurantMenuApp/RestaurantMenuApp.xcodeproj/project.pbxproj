@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		688B88FE275F975F00A874AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B88FD275F975F00A874AB /* AppDelegate.swift */; };
+		688B8900275F975F00A874AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B88FF275F975F00A874AB /* SceneDelegate.swift */; };
+		688B8902275F975F00A874AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B8901275F975F00A874AB /* ViewController.swift */; };
+		688B8907275F975F00A874AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 688B8906275F975F00A874AB /* Assets.xcassets */; };
+		688B890A275F975F00A874AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 688B8908275F975F00A874AB /* LaunchScreen.storyboard */; };
+		688B8915275F975F00A874AB /* RestaurantMenuAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B8914275F975F00A874AB /* RestaurantMenuAppTests.swift */; };
+		688B891F275F975F00A874AB /* RestaurantMenuAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B891E275F975F00A874AB /* RestaurantMenuAppUITests.swift */; };
+		688B8921275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		688B8911275F975F00A874AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 688B88F2275F975F00A874AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688B88F9275F975F00A874AB;
+			remoteInfo = RestaurantMenuApp;
+		};
+		688B891B275F975F00A874AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 688B88F2275F975F00A874AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688B88F9275F975F00A874AB;
+			remoteInfo = RestaurantMenuApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		688B88FA275F975F00A874AB /* RestaurantMenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantMenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		688B88FD275F975F00A874AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		688B88FF275F975F00A874AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		688B8901275F975F00A874AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		688B8906275F975F00A874AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		688B8909275F975F00A874AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		688B890B275F975F00A874AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688B8910275F975F00A874AB /* RestaurantMenuAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMenuAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		688B8914275F975F00A874AB /* RestaurantMenuAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuAppTests.swift; sourceTree = "<group>"; };
+		688B891A275F975F00A874AB /* RestaurantMenuAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMenuAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		688B891E275F975F00A874AB /* RestaurantMenuAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuAppUITests.swift; sourceTree = "<group>"; };
+		688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		688B88F7275F975F00A874AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B890D275F975F00A874AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B8917275F975F00A874AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		688B88F1275F975F00A874AB = {
+			isa = PBXGroup;
+			children = (
+				688B88FC275F975F00A874AB /* RestaurantMenuApp */,
+				688B8913275F975F00A874AB /* RestaurantMenuAppTests */,
+				688B891D275F975F00A874AB /* RestaurantMenuAppUITests */,
+				688B88FB275F975F00A874AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		688B88FB275F975F00A874AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				688B88FA275F975F00A874AB /* RestaurantMenuApp.app */,
+				688B8910275F975F00A874AB /* RestaurantMenuAppTests.xctest */,
+				688B891A275F975F00A874AB /* RestaurantMenuAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		688B88FC275F975F00A874AB /* RestaurantMenuApp */ = {
+			isa = PBXGroup;
+			children = (
+				688B88FD275F975F00A874AB /* AppDelegate.swift */,
+				688B88FF275F975F00A874AB /* SceneDelegate.swift */,
+				688B8901275F975F00A874AB /* ViewController.swift */,
+				688B8906275F975F00A874AB /* Assets.xcassets */,
+				688B8908275F975F00A874AB /* LaunchScreen.storyboard */,
+				688B890B275F975F00A874AB /* Info.plist */,
+			);
+			path = RestaurantMenuApp;
+			sourceTree = "<group>";
+		};
+		688B8913275F975F00A874AB /* RestaurantMenuAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				688B8914275F975F00A874AB /* RestaurantMenuAppTests.swift */,
+			);
+			path = RestaurantMenuAppTests;
+			sourceTree = "<group>";
+		};
+		688B891D275F975F00A874AB /* RestaurantMenuAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				688B891E275F975F00A874AB /* RestaurantMenuAppUITests.swift */,
+				688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */,
+			);
+			path = RestaurantMenuAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		688B88F9275F975F00A874AB /* RestaurantMenuApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688B8924275F975F00A874AB /* Build configuration list for PBXNativeTarget "RestaurantMenuApp" */;
+			buildPhases = (
+				688B88F6275F975F00A874AB /* Sources */,
+				688B88F7275F975F00A874AB /* Frameworks */,
+				688B88F8275F975F00A874AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestaurantMenuApp;
+			productName = RestaurantMenuApp;
+			productReference = 688B88FA275F975F00A874AB /* RestaurantMenuApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		688B890F275F975F00A874AB /* RestaurantMenuAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688B8927275F975F00A874AB /* Build configuration list for PBXNativeTarget "RestaurantMenuAppTests" */;
+			buildPhases = (
+				688B890C275F975F00A874AB /* Sources */,
+				688B890D275F975F00A874AB /* Frameworks */,
+				688B890E275F975F00A874AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688B8912275F975F00A874AB /* PBXTargetDependency */,
+			);
+			name = RestaurantMenuAppTests;
+			productName = RestaurantMenuAppTests;
+			productReference = 688B8910275F975F00A874AB /* RestaurantMenuAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		688B8919275F975F00A874AB /* RestaurantMenuAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688B892A275F975F00A874AB /* Build configuration list for PBXNativeTarget "RestaurantMenuAppUITests" */;
+			buildPhases = (
+				688B8916275F975F00A874AB /* Sources */,
+				688B8917275F975F00A874AB /* Frameworks */,
+				688B8918275F975F00A874AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688B891C275F975F00A874AB /* PBXTargetDependency */,
+			);
+			name = RestaurantMenuAppUITests;
+			productName = RestaurantMenuAppUITests;
+			productReference = 688B891A275F975F00A874AB /* RestaurantMenuAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		688B88F2275F975F00A874AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					688B88F9275F975F00A874AB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					688B890F275F975F00A874AB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 688B88F9275F975F00A874AB;
+					};
+					688B8919275F975F00A874AB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 688B88F9275F975F00A874AB;
+					};
+				};
+			};
+			buildConfigurationList = 688B88F5275F975F00A874AB /* Build configuration list for PBXProject "RestaurantMenuApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 688B88F1275F975F00A874AB;
+			productRefGroup = 688B88FB275F975F00A874AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				688B88F9275F975F00A874AB /* RestaurantMenuApp */,
+				688B890F275F975F00A874AB /* RestaurantMenuAppTests */,
+				688B8919275F975F00A874AB /* RestaurantMenuAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		688B88F8275F975F00A874AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688B890A275F975F00A874AB /* LaunchScreen.storyboard in Resources */,
+				688B8907275F975F00A874AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B890E275F975F00A874AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B8918275F975F00A874AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		688B88F6275F975F00A874AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688B8902275F975F00A874AB /* ViewController.swift in Sources */,
+				688B88FE275F975F00A874AB /* AppDelegate.swift in Sources */,
+				688B8900275F975F00A874AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B890C275F975F00A874AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688B8915275F975F00A874AB /* RestaurantMenuAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688B8916275F975F00A874AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688B8921275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift in Sources */,
+				688B891F275F975F00A874AB /* RestaurantMenuAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		688B8912275F975F00A874AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688B88F9275F975F00A874AB /* RestaurantMenuApp */;
+			targetProxy = 688B8911275F975F00A874AB /* PBXContainerItemProxy */;
+		};
+		688B891C275F975F00A874AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688B88F9275F975F00A874AB /* RestaurantMenuApp */;
+			targetProxy = 688B891B275F975F00A874AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		688B8908275F975F00A874AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688B8909275F975F00A874AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		688B8922275F975F00A874AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		688B8923275F975F00A874AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		688B8925275F975F00A874AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRCKZ2X8HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestaurantMenuApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.viniciuss.RestaurantMenuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		688B8926275F975F00A874AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRCKZ2X8HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestaurantMenuApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.viniciuss.RestaurantMenuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		688B8928275F975F00A874AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRCKZ2X8HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.viniciuss.RestaurantMenuAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestaurantMenuApp.app/RestaurantMenuApp";
+			};
+			name = Debug;
+		};
+		688B8929275F975F00A874AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRCKZ2X8HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.viniciuss.RestaurantMenuAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestaurantMenuApp.app/RestaurantMenuApp";
+			};
+			name = Release;
+		};
+		688B892B275F975F00A874AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRCKZ2X8HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.viniciuss.RestaurantMenuAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestaurantMenuApp;
+			};
+			name = Debug;
+		};
+		688B892C275F975F00A874AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NRCKZ2X8HA;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raphael.viniciuss.RestaurantMenuAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestaurantMenuApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		688B88F5275F975F00A874AB /* Build configuration list for PBXProject "RestaurantMenuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688B8922275F975F00A874AB /* Debug */,
+				688B8923275F975F00A874AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688B8924275F975F00A874AB /* Build configuration list for PBXNativeTarget "RestaurantMenuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688B8925275F975F00A874AB /* Debug */,
+				688B8926275F975F00A874AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688B8927275F975F00A874AB /* Build configuration list for PBXNativeTarget "RestaurantMenuAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688B8928275F975F00A874AB /* Debug */,
+				688B8929275F975F00A874AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688B892A275F975F00A874AB /* Build configuration list for PBXNativeTarget "RestaurantMenuAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688B892B275F975F00A874AB /* Debug */,
+				688B892C275F975F00A874AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 688B88F2275F975F00A874AB /* Project object */;
+}
