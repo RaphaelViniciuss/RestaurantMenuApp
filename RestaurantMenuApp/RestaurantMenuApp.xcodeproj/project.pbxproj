@@ -15,6 +15,8 @@
 		688B8915275F975F00A874AB /* RestaurantMenuAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B8914275F975F00A874AB /* RestaurantMenuAppTests.swift */; };
 		688B891F275F975F00A874AB /* RestaurantMenuAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B891E275F975F00A874AB /* RestaurantMenuAppUITests.swift */; };
 		688B8921275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */; };
+		688B8938275F9D3700A874AB /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 688B8935275F9CFB00A874AB /* Montserrat-Regular.ttf */; };
+		688B8939275F9D3900A874AB /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 688B8934275F9CFB00A874AB /* PlayfairDisplay-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		688B891A275F975F00A874AB /* RestaurantMenuAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantMenuAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		688B891E275F975F00A874AB /* RestaurantMenuAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuAppUITests.swift; sourceTree = "<group>"; };
 		688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		688B8934275F9CFB00A874AB /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		688B8935275F9CFB00A874AB /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,13 @@
 		688B88FC275F975F00A874AB /* RestaurantMenuApp */ = {
 			isa = PBXGroup;
 			children = (
-				688B88FD275F975F00A874AB /* AppDelegate.swift */,
+				688B892D275F9BA800A874AB /* Application */,
+				688B8930275F9BDC00A874AB /* Domain */,
+				688B892F275F9BC500A874AB /* Resources */,
+				688B8932275F9C1F00A874AB /* Scenes */,
+				688B892E275F9BAC00A874AB /* UIKit */,
 				688B88FF275F975F00A874AB /* SceneDelegate.swift */,
 				688B8901275F975F00A874AB /* ViewController.swift */,
-				688B8906275F975F00A874AB /* Assets.xcassets */,
-				688B8908275F975F00A874AB /* LaunchScreen.storyboard */,
-				688B890B275F975F00A874AB /* Info.plist */,
 			);
 			path = RestaurantMenuApp;
 			sourceTree = "<group>";
@@ -122,6 +127,71 @@
 				688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */,
 			);
 			path = RestaurantMenuAppUITests;
+			sourceTree = "<group>";
+		};
+		688B892D275F9BA800A874AB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				688B88FD275F975F00A874AB /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		688B892E275F9BAC00A874AB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		688B892F275F9BC500A874AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				688B8933275F9CD400A874AB /* Fonts */,
+				688B8906275F975F00A874AB /* Assets.xcassets */,
+				688B8908275F975F00A874AB /* LaunchScreen.storyboard */,
+				688B890B275F975F00A874AB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		688B8930275F9BDC00A874AB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		688B8932275F9C1F00A874AB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		688B8933275F9CD400A874AB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				688B8936275F9D0D00A874AB /* Montserrat */,
+				688B8937275F9D1300A874AB /* PlayfairDisplay */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		688B8936275F9D0D00A874AB /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				688B8935275F9CFB00A874AB /* Montserrat-Regular.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		688B8937275F9D1300A874AB /* PlayfairDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				688B8934275F9CFB00A874AB /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = PlayfairDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +300,8 @@
 			files = (
 				688B890A275F975F00A874AB /* LaunchScreen.storyboard in Resources */,
 				688B8907275F975F00A874AB /* Assets.xcassets in Resources */,
+				688B8938275F9D3700A874AB /* Montserrat-Regular.ttf in Resources */,
+				688B8939275F9D3900A874AB /* PlayfairDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +497,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NRCKZ2X8HA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RestaurantMenuApp/Info.plist;
+				INFOPLIST_FILE = RestaurantMenuApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -452,11 +525,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NRCKZ2X8HA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RestaurantMenuApp/Info.plist;
+				INFOPLIST_FILE = RestaurantMenuApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
