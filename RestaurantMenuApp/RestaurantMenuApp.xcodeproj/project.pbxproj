@@ -16,6 +16,9 @@
 		6843077E276122CB00F43B87 /* RestaurantDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843077D276122CB00F43B87 /* RestaurantDTO+Mapping.swift */; };
 		6843078327613B2600F43B87 /* FetchRestaurantUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843078227613B2600F43B87 /* FetchRestaurantUseCase.swift */; };
 		684307852761405300F43B87 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684307842761405300F43B87 /* AppConfig.swift */; };
+		6843078827615E6A00F43B87 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843078727615E6A00F43B87 /* AppDIContainer.swift */; };
+		6843078A276161CA00F43B87 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68430789276161CA00F43B87 /* DIContainer.swift */; };
+		6843078E27616D3400F43B87 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843078D27616D3400F43B87 /* Observable.swift */; };
 		687BE240275FA67B00BBD4FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */; };
 		687BE242275FA6A100BBD4FC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE241275FA6A100BBD4FC /* Coordinator.swift */; };
 		687BE245275FA76400BBD4FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE244275FA76400BBD4FC /* HomeCoordinator.swift */; };
@@ -70,6 +73,9 @@
 		6843077D276122CB00F43B87 /* RestaurantDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantDTO+Mapping.swift"; sourceTree = "<group>"; };
 		6843078227613B2600F43B87 /* FetchRestaurantUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRestaurantUseCase.swift; sourceTree = "<group>"; };
 		684307842761405300F43B87 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		6843078727615E6A00F43B87 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		68430789276161CA00F43B87 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		6843078D27616D3400F43B87 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		687BE241275FA6A100BBD4FC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		687BE244275FA76400BBD4FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -186,6 +192,32 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		6843078627615DBE00F43B87 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				6843078727615E6A00F43B87 /* AppDIContainer.swift */,
+				68430789276161CA00F43B87 /* DIContainer.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		6843078B27616D1400F43B87 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				688B8932275F9C1F00A874AB /* Scenes */,
+				6843078C27616D2400F43B87 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6843078C27616D2400F43B87 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6843078D27616D3400F43B87 /* Observable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		687BE243275FA71200BBD4FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,8 +289,8 @@
 				68E23BA22760E3D500FB3EBC /* Data */,
 				684307762761002F00F43B87 /* Domain */,
 				687BE24E275FB01400BBD4FC /* Network */,
+				6843078B27616D1400F43B87 /* Presentation */,
 				688B892F275F9BC500A874AB /* Resources */,
-				688B8932275F9C1F00A874AB /* Scenes */,
 				688B892E275F9BAC00A874AB /* UIKit */,
 			);
 			path = RestaurantMenuApp;
@@ -284,6 +316,7 @@
 		688B892D275F9BA800A874AB /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				6843078627615DBE00F43B87 /* DependencyInjection */,
 				688B88FD275F975F00A874AB /* AppDelegate.swift */,
 				687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */,
 				687BE241275FA6A100BBD4FC /* Coordinator.swift */,
@@ -502,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6843078827615E6A00F43B87 /* AppDIContainer.swift in Sources */,
 				684307852761405300F43B87 /* AppConfig.swift in Sources */,
 				687BE25F275FCB4A00BBD4FC /* Requestable.swift in Sources */,
 				687BE254275FB5FB00BBD4FC /* NetworkService.swift in Sources */,
@@ -517,6 +551,7 @@
 				687BE250275FB09200BBD4FC /* NetworkConfig.swift in Sources */,
 				687BE245275FA76400BBD4FC /* HomeCoordinator.swift in Sources */,
 				6843078327613B2600F43B87 /* FetchRestaurantUseCase.swift in Sources */,
+				6843078E27616D3400F43B87 /* Observable.swift in Sources */,
 				687BE264275FCFF900BBD4FC /* NetworkLogger.swift in Sources */,
 				687BE25A275FBA5200BBD4FC /* HTTPMethod.swift in Sources */,
 				684307712760F8F300F43B87 /* RestaurantDTO+Response.swift in Sources */,
@@ -524,6 +559,7 @@
 				6843076B2760F6DC00F43B87 /* EndpointsAPI.swift in Sources */,
 				687BE256275FB65700BBD4FC /* NetworkError.swift in Sources */,
 				68F5EC95275FD60100D1B289 /* ResponseDecoder.swift in Sources */,
+				6843078A276161CA00F43B87 /* DIContainer.swift in Sources */,
 				6843077C2761010700F43B87 /* Restaurant.swift in Sources */,
 				6843076E2760F85F00F43B87 /* RestaurantDTO+Request.swift in Sources */,
 				684307792761007C00F43B87 /* RestaurantRepository.swift in Sources */,

@@ -21,9 +21,8 @@ final class HomeCoordinator: Coordinator {
     }
 
     private func makeHomeViewController() -> UIViewController {
-        let viewModel = HomeViewModel()
-        let controller = HomeViewController(viewModel: viewModel)
-        controller.delegate = self
+        let controller = DIContainer.shared.makeHomeViewController()
+        controller.coordinationDelegate = self
         return controller
     }
 }
