@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6843076B2760F6DC00F43B87 /* EndpointsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843076A2760F6DC00F43B87 /* EndpointsAPI.swift */; };
+		6843076E2760F85F00F43B87 /* RestaurantDTO+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843076D2760F85F00F43B87 /* RestaurantDTO+Request.swift */; };
+		684307712760F8F300F43B87 /* RestaurantDTO+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684307702760F8F300F43B87 /* RestaurantDTO+Response.swift */; };
+		684307752760FFC400F43B87 /* DataRestaurantsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684307742760FFC400F43B87 /* DataRestaurantsRepository.swift */; };
+		684307792761007C00F43B87 /* RestaurantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684307782761007C00F43B87 /* RestaurantRepository.swift */; };
+		6843077C2761010700F43B87 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843077B2761010700F43B87 /* Restaurant.swift */; };
+		6843077E276122CB00F43B87 /* RestaurantDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843077D276122CB00F43B87 /* RestaurantDTO+Mapping.swift */; };
+		6843078327613B2600F43B87 /* FetchRestaurantUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843078227613B2600F43B87 /* FetchRestaurantUseCase.swift */; };
+		684307852761405300F43B87 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684307842761405300F43B87 /* AppConfig.swift */; };
 		687BE240275FA67B00BBD4FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */; };
 		687BE242275FA6A100BBD4FC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE241275FA6A100BBD4FC /* Coordinator.swift */; };
 		687BE245275FA76400BBD4FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE244275FA76400BBD4FC /* HomeCoordinator.swift */; };
@@ -52,6 +61,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6843076A2760F6DC00F43B87 /* EndpointsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsAPI.swift; sourceTree = "<group>"; };
+		6843076D2760F85F00F43B87 /* RestaurantDTO+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantDTO+Request.swift"; sourceTree = "<group>"; };
+		684307702760F8F300F43B87 /* RestaurantDTO+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantDTO+Response.swift"; sourceTree = "<group>"; };
+		684307742760FFC400F43B87 /* DataRestaurantsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRestaurantsRepository.swift; sourceTree = "<group>"; };
+		684307782761007C00F43B87 /* RestaurantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRepository.swift; sourceTree = "<group>"; };
+		6843077B2761010700F43B87 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		6843077D276122CB00F43B87 /* RestaurantDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantDTO+Mapping.swift"; sourceTree = "<group>"; };
+		6843078227613B2600F43B87 /* FetchRestaurantUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRestaurantUseCase.swift; sourceTree = "<group>"; };
+		684307842761405300F43B87 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		687BE241275FA6A100BBD4FC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		687BE244275FA76400BBD4FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -108,6 +126,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6843076C2760F84000F43B87 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				684307722760FD0E00F43B87 /* Request */,
+				684307732760FD1100F43B87 /* Response */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		684307722760FD0E00F43B87 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				6843076D2760F85F00F43B87 /* RestaurantDTO+Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		684307732760FD1100F43B87 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				684307702760F8F300F43B87 /* RestaurantDTO+Response.swift */,
+				6843077D276122CB00F43B87 /* RestaurantDTO+Mapping.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		684307762761002F00F43B87 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6843077A276100FD00F43B87 /* Models */,
+				684307772761004D00F43B87 /* Repositories */,
+				6843078127613A7800F43B87 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		684307772761004D00F43B87 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				684307782761007C00F43B87 /* RestaurantRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6843077A276100FD00F43B87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6843077B2761010700F43B87 /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6843078127613A7800F43B87 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6843078227613B2600F43B87 /* FetchRestaurantUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		687BE243275FA71200BBD4FC /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +254,8 @@
 			isa = PBXGroup;
 			children = (
 				688B892D275F9BA800A874AB /* Application */,
+				68E23BA22760E3D500FB3EBC /* Data */,
+				684307762761002F00F43B87 /* Domain */,
 				687BE24E275FB01400BBD4FC /* Network */,
 				688B892F275F9BC500A874AB /* Resources */,
 				688B8932275F9C1F00A874AB /* Scenes */,
@@ -208,6 +288,7 @@
 				687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */,
 				687BE241275FA6A100BBD4FC /* Coordinator.swift */,
 				688B88FF275F975F00A874AB /* SceneDelegate.swift */,
+				684307842761405300F43B87 /* AppConfig.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -261,6 +342,32 @@
 				688B8934275F9CFB00A874AB /* PlayfairDisplay-Regular.ttf */,
 			);
 			path = PlayfairDisplay;
+			sourceTree = "<group>";
+		};
+		68E23BA22760E3D500FB3EBC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				68E23BA42760E3E300FB3EBC /* Network */,
+				68E23BA32760E3DD00FB3EBC /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		68E23BA32760E3DD00FB3EBC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				684307742760FFC400F43B87 /* DataRestaurantsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		68E23BA42760E3E300FB3EBC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6843076C2760F84000F43B87 /* DTOs */,
+				6843076A2760F6DC00F43B87 /* EndpointsAPI.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +502,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684307852761405300F43B87 /* AppConfig.swift in Sources */,
 				687BE25F275FCB4A00BBD4FC /* Requestable.swift in Sources */,
 				687BE254275FB5FB00BBD4FC /* NetworkService.swift in Sources */,
 				687BE240275FA67B00BBD4FC /* AppCoordinator.swift in Sources */,
@@ -405,14 +513,22 @@
 				68F5EC93275FD5B900D1B289 /* DataTransferError.swift in Sources */,
 				688B8900275F975F00A874AB /* SceneDelegate.swift in Sources */,
 				687BE247275FA79E00BBD4FC /* HomeViewController.swift in Sources */,
+				684307752760FFC400F43B87 /* DataRestaurantsRepository.swift in Sources */,
 				687BE250275FB09200BBD4FC /* NetworkConfig.swift in Sources */,
 				687BE245275FA76400BBD4FC /* HomeCoordinator.swift in Sources */,
+				6843078327613B2600F43B87 /* FetchRestaurantUseCase.swift in Sources */,
 				687BE264275FCFF900BBD4FC /* NetworkLogger.swift in Sources */,
 				687BE25A275FBA5200BBD4FC /* HTTPMethod.swift in Sources */,
+				684307712760F8F300F43B87 /* RestaurantDTO+Response.swift in Sources */,
 				687BE258275FB81B00BBD4FC /* Endpoint.swift in Sources */,
+				6843076B2760F6DC00F43B87 /* EndpointsAPI.swift in Sources */,
 				687BE256275FB65700BBD4FC /* NetworkError.swift in Sources */,
 				68F5EC95275FD60100D1B289 /* ResponseDecoder.swift in Sources */,
+				6843077C2761010700F43B87 /* Restaurant.swift in Sources */,
+				6843076E2760F85F00F43B87 /* RestaurantDTO+Request.swift in Sources */,
+				684307792761007C00F43B87 /* RestaurantRepository.swift in Sources */,
 				687BE266275FD0D900BBD4FC /* NetworkSessionManager.swift in Sources */,
+				6843077E276122CB00F43B87 /* RestaurantDTO+Mapping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +703,7 @@
 				DEVELOPMENT_TEAM = NRCKZ2X8HA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RestaurantMenuApp/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -615,6 +732,7 @@
 				DEVELOPMENT_TEAM = NRCKZ2X8HA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RestaurantMenuApp/Resources/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
