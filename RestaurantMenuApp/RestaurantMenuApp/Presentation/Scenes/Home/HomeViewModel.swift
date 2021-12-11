@@ -10,6 +10,7 @@ import UIKit
 
 protocol HomeViewModelable {
     var restaurant: Observable<Restaurant?> { get }
+    var isLoading: Observable<Bool> { get }
 
     func viewDidLoad()
 }
@@ -18,6 +19,7 @@ final class HomeViewModel: HomeViewModelable {
     private let MOCK_ID = "4072702673999819"
 
     let restaurant: Observable<Restaurant?> = Observable(nil)
+    let isLoading: Observable<Bool> = Observable(false)
 
     private let fetchRestaurantUseCase: FetchRestaurantUseCaseProtocol
 
@@ -31,7 +33,9 @@ final class HomeViewModel: HomeViewModelable {
     }
 
     func viewDidLoad() {
-        fetchRestaurantUseCase.execute(id: MOCK_ID) { result in
+        isLoading.value = true
+        fetchRestaurantUseCase.execute(id: MOCK_ID) { [unowned self] result in
+            self.isLoading.value = false
             switch result {
             case .success(let data): self.restaurant.value = data
             case .failure(_): break

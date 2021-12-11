@@ -60,6 +60,10 @@ final class HomeViewController: UIViewController {
 
     // MARK:  Observables
     private func bindObservables() {
+        viewModel.isLoading.observe(on: self) { [weak self] isLoading in
+            self?.handleLoadingState(isLoading)
+        }
+
         viewModel.restaurant.observe(on: self) { [weak self] data in
             guard let data = data else { return }
             self?.restaurant = data

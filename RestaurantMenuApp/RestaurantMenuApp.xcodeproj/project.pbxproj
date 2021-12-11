@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683B477B276514B5006E7932 /* ActivityIndicatorOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683B477A276514B5006E7932 /* ActivityIndicatorOverlay.swift */; };
 		6843076B2760F6DC00F43B87 /* EndpointsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843076A2760F6DC00F43B87 /* EndpointsAPI.swift */; };
 		6843076E2760F85F00F43B87 /* RestaurantDTO+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843076D2760F85F00F43B87 /* RestaurantDTO+Request.swift */; };
 		684307712760F8F300F43B87 /* RestaurantDTO+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684307702760F8F300F43B87 /* RestaurantDTO+Response.swift */; };
@@ -19,7 +20,7 @@
 		6843078827615E6A00F43B87 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843078727615E6A00F43B87 /* AppDIContainer.swift */; };
 		6843078A276161CA00F43B87 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68430789276161CA00F43B87 /* DIContainer.swift */; };
 		6843078E27616D3400F43B87 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6843078D27616D3400F43B87 /* Observable.swift */; };
-		685A2EEE276241500003D37F /* MenuItemCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A2EED276241500003D37F /* MenuItemCollectionViewFlowLayout.swift */; };
+		685A2EEE276241500003D37F /* MenuItemFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685A2EED276241500003D37F /* MenuItemFlowLayout.swift */; };
 		687BE240275FA67B00BBD4FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */; };
 		687BE242275FA6A100BBD4FC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE241275FA6A100BBD4FC /* Coordinator.swift */; };
 		687BE245275FA76400BBD4FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BE244275FA76400BBD4FC /* HomeCoordinator.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		683B477A276514B5006E7932 /* ActivityIndicatorOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorOverlay.swift; sourceTree = "<group>"; };
 		6843076A2760F6DC00F43B87 /* EndpointsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsAPI.swift; sourceTree = "<group>"; };
 		6843076D2760F85F00F43B87 /* RestaurantDTO+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantDTO+Request.swift"; sourceTree = "<group>"; };
 		684307702760F8F300F43B87 /* RestaurantDTO+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestaurantDTO+Response.swift"; sourceTree = "<group>"; };
@@ -85,7 +87,7 @@
 		6843078727615E6A00F43B87 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		68430789276161CA00F43B87 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		6843078D27616D3400F43B87 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		685A2EED276241500003D37F /* MenuItemCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		685A2EED276241500003D37F /* MenuItemFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemFlowLayout.swift; sourceTree = "<group>"; };
 		687BE23F275FA67B00BBD4FC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		687BE241275FA6A100BBD4FC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		687BE244275FA76400BBD4FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -150,6 +152,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		683B4779276514A9006E7932 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				68F934462761727600099353 /* SceneView.swift */,
+				683B477A276514B5006E7932 /* ActivityIndicatorOverlay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6843076C2760F84000F43B87 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +242,10 @@
 		6843078C27616D2400F43B87 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				683B4779276514A9006E7932 /* Views */,
 				685A2EEF276241B80003D37F /* FlowLayouts */,
 				68F93448276172B300099353 /* Extensions */,
 				6843078D27616D3400F43B87 /* Observable.swift */,
-				68F934462761727600099353 /* SceneView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -242,7 +253,7 @@
 		685A2EEF276241B80003D37F /* FlowLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				685A2EED276241500003D37F /* MenuItemCollectionViewFlowLayout.swift */,
+				685A2EED276241500003D37F /* MenuItemFlowLayout.swift */,
 			);
 			path = FlowLayouts;
 			sourceTree = "<group>";
@@ -590,7 +601,7 @@
 				68F934532761946900099353 /* MenuItemCell.swift in Sources */,
 				6843078827615E6A00F43B87 /* AppDIContainer.swift in Sources */,
 				684307852761405300F43B87 /* AppConfig.swift in Sources */,
-				685A2EEE276241500003D37F /* MenuItemCollectionViewFlowLayout.swift in Sources */,
+				685A2EEE276241500003D37F /* MenuItemFlowLayout.swift in Sources */,
 				687BE25F275FCB4A00BBD4FC /* Requestable.swift in Sources */,
 				687BE254275FB5FB00BBD4FC /* NetworkService.swift in Sources */,
 				687BE240275FA67B00BBD4FC /* AppCoordinator.swift in Sources */,
@@ -604,6 +615,7 @@
 				68F9345127617FAE00099353 /* HomeViewController+UICollectionView.swift in Sources */,
 				684307752760FFC400F43B87 /* DataRestaurantsRepository.swift in Sources */,
 				687BE250275FB09200BBD4FC /* NetworkConfig.swift in Sources */,
+				683B477B276514B5006E7932 /* ActivityIndicatorOverlay.swift in Sources */,
 				687BE245275FA76400BBD4FC /* HomeCoordinator.swift in Sources */,
 				6843078327613B2600F43B87 /* FetchRestaurantUseCase.swift in Sources */,
 				68F934452761724900099353 /* HomeView.swift in Sources */,
@@ -793,7 +805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NRCKZ2X8HA;
@@ -822,7 +834,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NRCKZ2X8HA;
