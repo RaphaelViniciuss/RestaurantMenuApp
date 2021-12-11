@@ -17,8 +17,8 @@ class MenuItemHeaderCell: UICollectionViewCell, SceneView {
     // MARK: Views
     var titleLabel: UILabel = {
         let label = UILabel(frame: CGRect.zero)
-        label.font = UIFont(name: "Montserrat-Regular", size: 20.0)
-        label.textColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1.00)
+        label.font = RestaurantUIKit.font(family: .montserrat, weight: .regular, typography: .title2)
+        label.textColor = RestaurantUIKit.Color.textContent
         label.numberOfLines = .zero
         label.text = ""
         return label

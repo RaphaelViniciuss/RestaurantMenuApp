@@ -41,7 +41,7 @@ class MenuSectionCell: UICollectionViewCell, SceneView {
     // MARK: Views
     private var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Montserrat-Regular", size: 16.0)
+        label.font = RestaurantUIKit.font(family: .montserrat, weight: .regular, typography: .body)
         label.textColor = .lightGray
         label.textAlignment = .center
         label.text = ""
@@ -50,7 +50,7 @@ class MenuSectionCell: UICollectionViewCell, SceneView {
 
     private var indicatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1.00)
+        view.backgroundColor = RestaurantUIKit.Color.lineIndicatorColor
         view.isHidden = true
         return view
     }()
@@ -89,7 +89,7 @@ class MenuSectionCell: UICollectionViewCell, SceneView {
 
     // MARK: Private methods
     private func onSelected(_ newValue: Bool) {
-        titleLabel.textColor = newValue ? UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1.00) : .lightGray
+        titleLabel.textColor = newValue ? RestaurantUIKit.Color.menuTitleEnabled : RestaurantUIKit.Color.menuTitleDisabled
         indicatorView.isHidden = !newValue
     }
 }

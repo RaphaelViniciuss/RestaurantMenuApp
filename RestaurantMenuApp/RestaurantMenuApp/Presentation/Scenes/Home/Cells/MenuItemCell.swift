@@ -19,7 +19,7 @@ class MenuItemCell: UICollectionViewCell, SceneView {
     // MARK: Metrics
     private struct Metrics {
         struct Label {
-            static let nameLabelTopSpacing: CGFloat = 20
+            static let nameLabelTopSpacing: CGFloat = 10
             static let infoLabelTopSpacing: CGFloat = 10
             static let priceLabelTopSpacing: CGFloat = 30
         }
@@ -35,8 +35,8 @@ class MenuItemCell: UICollectionViewCell, SceneView {
     // MARK: Views
     private lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1.00)
-        label.font = UIFont(name: "PlayfairDisplay-Regular", size: 24)
+        label.textColor = RestaurantUIKit.Color.textContent
+        label.font = RestaurantUIKit.font(family: .playfairDisplay, weight: .regular, typography: .headline)
         label.numberOfLines = .zero
         label.textAlignment = .center
         label.text = ""
@@ -45,8 +45,8 @@ class MenuItemCell: UICollectionViewCell, SceneView {
 
     private lazy var infoLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1.00)
-        label.font = UIFont(name: "PlayfairDisplay-Regular", size: 16)
+        label.textColor = RestaurantUIKit.Color.textDescription
+        label.font = RestaurantUIKit.font(family: .playfairDisplay, weight: .regular, typography: .body)
         label.numberOfLines = .zero
         label.textAlignment = .center
         label.text = ""
@@ -55,17 +55,15 @@ class MenuItemCell: UICollectionViewCell, SceneView {
 
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(red: 0.47, green: 0.47, blue: 0.47, alpha: 1.00)
-        label.font = UIFont(name: "Montserrat-Regular", size: 14.0)
+        label.textColor = RestaurantUIKit.Color.textDescription
+        label.font = RestaurantUIKit.font(family: .montserrat, weight: .regular, typography: .subheadline)
         label.textAlignment = .center
         label.text = ""
         return label
     }()
 
-    private lazy var divider: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)
-        return view
+    private lazy var divider: DividerView = {
+        return DividerView()
     }()
 
     // MARK: Init

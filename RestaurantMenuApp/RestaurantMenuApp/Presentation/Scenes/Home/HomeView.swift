@@ -50,33 +50,29 @@ final class HomeView: UIView, SceneView {
     // MARK: Views
     private lazy var restaurantLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Montserrat-Regular", size: 20.0)
+        label.font = RestaurantUIKit.font(family: .montserrat, weight: .regular, typography: .title2)
         label.textAlignment = .center
-        label.textColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1.00)
+        label.textColor = RestaurantUIKit.Color.textContent
         label.numberOfLines = .zero
         return label
     }()
 
-    private lazy var dividerTitle: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)
-        return view
+    private lazy var dividerTitle: DividerView = {
+        return DividerView()
     }()
 
     private lazy var menuLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "Montserrat-Regular", size: 20.0)
+        label.font = RestaurantUIKit.font(family: .montserrat, weight: .regular, typography: .title2)
         label.textAlignment = .center
-        label.textColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1.00)
+        label.textColor = RestaurantUIKit.Color.textContent
         label.numberOfLines = 1
         label.text = ""
         return label
     }()
 
-    private lazy var dividerTopSectionMenu: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)
-        return view
+    private lazy var dividerTopSectionMenu: DividerView = {
+        return DividerView()
     }()
 
     private var menuSectionCollectionViewFlowLayout: UICollectionViewFlowLayout = {
@@ -97,9 +93,7 @@ final class HomeView: UIView, SceneView {
     }()
 
     private lazy var dividerBottomSectionMenu: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor(red: 0.93, green: 0.93, blue: 0.93, alpha: 1.00)
-        return view
+        return DividerView()
     }()
 
     private var menuitemCollectionViewFlowLayout: UICollectionViewFlowLayout = {
@@ -139,7 +133,7 @@ final class HomeView: UIView, SceneView {
 
     // MARK: SceneView
     func setupView() {
-        backgroundColor = .white
+        backgroundColor = .systemBackground
         buildSubviews()
         setupConstraints()
     }
