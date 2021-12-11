@@ -34,7 +34,7 @@ final class HomeViewModel: HomeViewModelable {
         fetchRestaurantUseCase.execute(id: MOCK_ID) { result in
             switch result {
             case .success(let data): self.restaurant.value = data
-            case .failure(let e): debugPrint(e)
+            case .failure(_): break
             }
         }
     }
