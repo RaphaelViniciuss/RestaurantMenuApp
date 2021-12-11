@@ -35,6 +35,6 @@ final class DIContainer {
 
     // MARK: - View Controllers
     func makeHomeViewController() -> HomeViewController {
-        return .init(viewModel: makeHomeViewModel())
+        return HomeViewController(viewModel: makeHomeViewModel())
     }
 }

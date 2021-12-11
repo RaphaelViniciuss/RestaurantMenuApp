@@ -13,7 +13,9 @@ public protocol Requestable {
     var method: HTTPMethodType { get }
     var headerParamaters: [String: String] { get }
     var queryParameters: [String: Any] { get }
+    var queryParametersEncodable: Encodable? { get }
     var bodyParamaters: [String: Any] { get }
+    var bodyParamatersEncodable: Encodable? { get }
 
     func urlRequest(with networkConfig: NetworkConfigurable) throws -> URLRequest
 }
@@ -39,6 +41,8 @@ extension Requestable {
 
         var urlQueryItems = [URLQueryItem]()
 
+
+        let queryParameters = try queryParametersEncodable?.toDictionary() ?? self.queryParameters
         queryParameters.forEach {
             urlQueryItems.append(URLQueryItem(name: $0.key, value: "\($0.value)"))
         }
@@ -62,6 +66,7 @@ extension Requestable {
         var allHeaders: [String: String] = config.headers
         headerParamaters.forEach { allHeaders.updateValue($1, forKey: $0) }
 
+        let bodyParamaters = try bodyParamatersEncodable?.toDictionary() ?? self.bodyParamaters
         if !bodyParamaters.isEmpty {
             urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: bodyParamaters)
         }
@@ -69,5 +74,13 @@ extension Requestable {
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields = allHeaders
         return urlRequest
+    }
+}
+
+private extension Encodable {
+    func toDictionary() throws -> [String: Any]? {
+        let data = try JSONEncoder().encode(self)
+        let jsonData = try JSONSerialization.jsonObject(with: data)
+        return jsonData as? [String : Any]
     }
 }

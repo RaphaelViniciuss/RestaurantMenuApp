@@ -8,12 +8,13 @@
 
 import UIKit
 
-class HomeView: UIView, SceneView {
+final class HomeView: UIView, SceneView {
 
     // MARK: Public properties
     var restaurantData: Restaurant? {
         didSet {
-            restaurantLabel.text = restaurantData?.restaurantName
+            restaurantLabel.text = restaurantData?.restaurantName ?? "RESTAURANT"
+            menuLabel.text = restaurantData?.menus.first?.menuName ?? "MENU"
             menuSectionCollectionView.reloadData()
             menuSectionCollectionView.layoutIfNeeded()
             menuItemCollectionView.reloadData()
@@ -68,7 +69,7 @@ class HomeView: UIView, SceneView {
         label.textAlignment = .center
         label.textColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1.00)
         label.numberOfLines = 1
-        label.text = "MENU"
+        label.text = ""
         return label
     }()
 
@@ -102,7 +103,7 @@ class HomeView: UIView, SceneView {
     }()
 
     private var menuitemCollectionViewFlowLayout: UICollectionViewFlowLayout = {
-        let layout = MenuItemCollectionViewFlowLayout()
+        let layout = MenuItemFlowLayout()
         layout.scrollDirection = .vertical
         layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         layout.minimumInteritemSpacing = Metrics.MenuItem.minimumInteritemSpacing

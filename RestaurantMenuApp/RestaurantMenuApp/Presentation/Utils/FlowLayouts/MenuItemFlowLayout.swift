@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MenuItemCollectionViewFlowLayout: UICollectionViewFlowLayout {
+final class MenuItemFlowLayout: UICollectionViewFlowLayout {
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let layoutAttributesObjects = super.layoutAttributesForElements(in: rect)?.map{ $0.copy() } as? [UICollectionViewLayoutAttributes]
