@@ -52,7 +52,6 @@
 		688B8921275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */; };
 		688B8938275F9D3700A874AB /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 688B8935275F9CFB00A874AB /* Montserrat-Regular.ttf */; };
 		688B8939275F9D3900A874AB /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 688B8934275F9CFB00A874AB /* PlayfairDisplay-Regular.ttf */; };
-		6890B18A2764054000ECB6DB /* Untitled.json in Resources */ = {isa = PBXBuildFile; fileRef = 6890B1892764054000ECB6DB /* Untitled.json */; };
 		68F5EC93275FD5B900D1B289 /* DataTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5EC92275FD5B900D1B289 /* DataTransferError.swift */; };
 		68F5EC95275FD60100D1B289 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F5EC94275FD60100D1B289 /* ResponseDecoder.swift */; };
 		68F934452761724900099353 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F934442761724900099353 /* HomeView.swift */; };
@@ -650,7 +649,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				688B890A275F975F00A874AB /* LaunchScreen.storyboard in Resources */,
-				6890B18A2764054000ECB6DB /* Untitled.json in Resources */,
 				688B8907275F975F00A874AB /* Assets.xcassets in Resources */,
 				688B8938275F9D3700A874AB /* Montserrat-Regular.ttf in Resources */,
 				688B8939275F9D3900A874AB /* PlayfairDisplay-Regular.ttf in Resources */,
