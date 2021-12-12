@@ -130,7 +130,6 @@
 		688B8920275F975F00A874AB /* RestaurantMenuAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		688B8934275F9CFB00A874AB /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		688B8935275F9CFB00A874AB /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		6890B1892764054000ECB6DB /* Untitled.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Untitled.json; sourceTree = "<group>"; };
 		68F5EC92275FD5B900D1B289 /* DataTransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferError.swift; sourceTree = "<group>"; };
 		68F5EC94275FD60100D1B289 /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
 		68F934442761724900099353 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -458,7 +457,6 @@
 		688B892F275F9BC500A874AB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6890B1892764054000ECB6DB /* Untitled.json */,
 				688B8933275F9CD400A874AB /* Fonts */,
 				688B8906275F975F00A874AB /* Assets.xcassets */,
 				688B8908275F975F00A874AB /* LaunchScreen.storyboard */,
