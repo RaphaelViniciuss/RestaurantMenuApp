@@ -9,11 +9,16 @@
 import Foundation
 import os
 
-public enum DataTransferError: Error {
+public enum DataTransferError: Error, Equatable {
+
     case noResponse
     case parsing(Error)
     case networkFailure(NetworkError)
     case resolvedNetworkFailure(Error)
+
+    public static func == (lhs: DataTransferError, rhs: DataTransferError) -> Bool {
+        lhs.localizedDescription == rhs.localizedDescription
+    }
 }
 
 // MARK: Resolver

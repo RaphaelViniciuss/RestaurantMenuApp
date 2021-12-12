@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Restaurant {
+struct Restaurant: Equatable {
     let restaurantID: Int
     let restaurantName, restaurantPhone: String
     let restaurantWebsite: String
@@ -19,6 +19,10 @@ struct Restaurant {
     let geo: Geo
     let menus: [Menu]
     let lastUpdated: String
+
+    static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {
+        lhs.restaurantID == rhs.restaurantID
+    }
 
     struct Address {
         let city, state, postalCode, street: String
