@@ -5,7 +5,7 @@
 	<key>ApiBaseURL</key>
 	<string>https://api.documenu.com/v2/</string>
 	<key>ApiKey</key>
-	<string></string>
+	<string>API KEY HERE</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
